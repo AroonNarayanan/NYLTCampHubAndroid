@@ -25,3 +25,9 @@ class RestController {
         }
     }
 }
+
+interface RestCallback {
+    fun onSuccess(result: Any)
+
+    fun onFailure(error: Any)
+}
